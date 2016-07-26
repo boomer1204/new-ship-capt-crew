@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <meta charset="UTF-8">
+    <title>Ship Captain Crew</title>
+
+
+
+    <link rel='stylesheet prefetch' href='http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css'>
+    <link rel='stylesheet prefetch' href='http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <body>
+        <div class="container-fluid">
+            <div class="row">
+              <div class="col-md-7 col-md-offset-2">
+                <h1 class='align-center'>Ship, Captain & Crew</h1>
+                <div class='row' id="game_container" >
+                    <div class="col-xs-4 col-xs-offset-4" id="device_owner_player_row">
+                        <h2 class='align-center' id='firstPlayerScore'></h2>
+                    </div>
+                    <div class="clear"></div>
+                    <div id="dice_row" class='row'>
+                        <div id="dice_center" class='col-xs-4 col-xs-offset-2'>
+                            <div class="dice game_item" id="dice1"></div>
+                            <div class="dice game_item" id="dice2"></div>
+                            <div class="dice game_item" id="dice3"></div>
+                            <div class="dice game_item" id="dice4"></div>
+                            <div class="dice game_item" id="dice5"></div>
+                            <button class='roll-button game-item btn btn-primary btn-lg' id='roll_button'>Roll Dice</button>
+                        </div>
+                    </div>
+                    <div class="clear"></div>
+                    <div class='col-xs-6 col-xs-offset-5 cargoButton'>
+                        <button id='cargo' class='game-item btn btn-primary btn-lg'>Collect Cargo</button>
+                        <button id='restart' class='game-item btn btn-primary btn-lg'>Restart</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class='col-xs-5 col-xs-offset-4 player-score'>Player: <span id='p1'></span></div>
+
+    </div>
+    <button type="button" class="btn btn-primary btn-lg center-block" data-toggle="modal" data-target="#howToPlay">
+  How To Play
+</button>
+
+<div class="modal fade" id="howToPlay" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+        <div class="modal-body">
+            <p>In this simple 6-5-4 version you must first have the ship (6) before you have the captain (5); likewise, you must first have the captain before you have the crew (4). This can be very frustrating when you fail to roll a six, and have a score of zero.</p>
+            <p>As you shoot each one of these points in order, you can pull that die out of the cup and set it aside. Alternatively, you can elective to put as many of the dice in the cup and try again (this is stupid, since it does not improve you odds, but it is legal).</p>
+            <p>Each player gets at least one and no more than three flops (toss of the dice cup) in the two player game. The score is the total of the two dice left over after the Ship, Captain and Crew have been completed. A 2 is the lowest score and is called a "minimum" while 12 is the highest score and is called a "midnight"; I don't know why</p>
+            <p>The highest score wins. If there is a tie in a two player game, they just play another hand and buy their own drinks.</p>
+        </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default center-block" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script src='js/index.js'></script>
+<script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+</html>

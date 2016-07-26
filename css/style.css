@@ -1,0 +1,144 @@
+/* General Document Styles */
+body{
+	font-family: 'Open Sans', Helvetica, Arial, Sans-Serif;
+  background-color: green;
+}
+
+.clear{
+	clear: both;
+}
+
+.container{
+	position:absolute;
+	top:0;
+	left:0;
+	background-color: green;
+}
+
+#game_container {
+	height: 100%;
+
+}
+
+/* Device Owner (current player) Info Styles */
+.player_info{
+	float: left;
+	height: 100%;
+}
+
+#device_owner_player_row{
+	width: 100%;
+	height: 15%;
+  padding-top: 25px;
+}
+
+#device_owner_player_row h2 {
+  color: black;
+  font-weight: bold;
+  font-size: 2.5em;
+}
+
+#device_owner_player_name{
+	width: 70%;
+}
+
+#device_owner_score{
+	width: 30%;
+
+}
+
+.player_info#device_owner_score h1{
+	float: right;
+}
+.player_info h1{
+	padding: 0;
+	margin: 0;
+}
+
+/* Dice Styles */
+#dice_row{
+	height: 15%;
+}
+
+#dice_center{
+	width: 100%;
+	margin-left: 30%;
+	margin-top: 5%;
+}
+
+.game_item{
+	position: relative;
+	float: left;
+	margin: 5px;
+}
+
+.game-item {
+  font-size: 1.5em;
+}
+
+.dice{
+	width: 5%;
+	border-radius: 15px;
+	background-image: url("http://www.boomersplayground.com/img/dice/dice1.png");
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+/* Button Styles -- some styles come from dice styles */
+#roll_button{
+	background-color: #337ab7;
+	border-color: #2e6da4;
+	border-radius: 10px;
+	color: #fff;
+	text-align: center;
+  margin-left: 50px;
+}
+
+
+/*.cargo {
+  width: 10%;
+  background-color: #337ab7;
+  border-color: #2e6da4;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  padding: 10px;
+  margin-left: 45%;
+  margin-top: 50px;
+}*/
+
+.cargoButton {
+  margin-top: 50px;
+}
+
+.roll-button {
+  height: 85px;
+  width: 150px;
+}
+
+.glowing {
+  border: 5px solid blue;
+}
+
+/*.jumbotron {
+  text-align: center;
+  background-color: rgba(250. 250, 250, 0.8);
+  width: 400px;
+}*/
+
+h1 {
+  text-align: center;
+  color: black;
+}
+
+.dice {
+  height: 75px;
+  width: 75px;
+}
+
+.player-score {
+  margin-top: 40px;
+  font-size: 2em;
+  font-weight: bold;
+  color: black;
+}
